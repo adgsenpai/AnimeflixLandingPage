@@ -22,11 +22,20 @@
     <meta name="twitter:description" content="Enjoy the latest anime episodes and movies from Japan in high quality. Free sub/dub streaming available.">
     <meta name="twitter:image" content="https://animeflix.co.za/static/seo.png">
 
-    <!-- Stylesheets and Scripts -->
+    <!-- Preload and Defer Stylesheets -->
+    <link rel="preload" href="./static/aos.css" as="style">
+    <link rel="preload" href="./static/swiper-bundle.min.css" as="style">
+    <link rel="preload" href="./static/style.css" as="style">
+    
     <link href="./static/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./static/swiper-bundle.min.css">
     <link href="./static/style.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./static/favicon-32x32.png" sizes="32x32">    
+    
+    <link rel="icon" type="image/png" href="./static/favicon-32x32.png" sizes="32x32">
+    <!-- @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap">
+
+
 </head>
 
 
@@ -45,7 +54,7 @@
                         <!-- Logo -->
                         <a class="cwban" href="/" aria-label="Animeflix">
                             <img class="cbdyn" src="./static/favicon-32x32.png" width="32" height="32"
-                                alt="Stellar">
+                                alt="Animeflix">
                         </a>
                     </div>
 
@@ -214,21 +223,7 @@
                 </div>
             </section>
 
-            <!-- Clients -->
-            <section>
-                <div class="co3q6 c27r3 csm51 csya4 ccyhi">
-
-                    <!-- Particles animation -->
-                    <div class="co3q6 ca5ue csm51 cwmqr csya4 ccyhi">
-                        <div class="ca5ue cwmqr ch67j" aria-hidden="true">
-                            <canvas data-particle-animation="" data-particle-quantity="5" width="2304" height="330"
-                                style="width: 1152px; height: 165px;"></canvas>
-                        </div>
-                    </div>
-
-
-                </div>
-            </section>
+ 
 
             <!-- Features -->
             <section>
@@ -584,26 +579,15 @@
                             <h2 class="cc7gh ccqrz cx8zw c6df8 cfcmr ctwez cvc1j c4zau">We are DMCA compliant</h2>
                             <p class="cmuyi cbgr1">We support the DMCA and will take down any content that is reported
                                 to us.</p>
+                            <br>
+                            <!-- center image-->
+
+                            <img src="./static/dmca.webp" width="50%" height="100%" alt="DMCA Compliant" loading="lazy"
+                            style="display: block; margin-left: auto; margin-right: auto;">
+                            
                         </div>
 
-                        <div class="c80wd csya4">
-                            <div>
-                                <div class="cq2yg" data-highlighter="">
-                                    <div
-                                        class="cp2di c08y9 cnkqm coqle c272e cdmwi c41c6 cuuka cuehh c5tlw cnna9 c8isz ct0cz c3dq6 c5aca c1mpe cjfiv cj8zu cbvce cngbt ciw4n cww36 cmy5g cco6z cfetr cmpox c260e cyayz c27r3 c0cl2">
-                                        <div class="chrsn cbvce cs2bp c27r3 ck8nf ccxsu">
-                                            <!-- Radial gradient -->
-                                            <div class="c3sb3 c2vxt colir c21zy c3x17 ca5ue c2s0w c02j2 ch67j"
-                                                aria-hidden="true">
-                                                <div class="c9ua1 chor7 cw2sl cdfzt ca5ue cwmqr"></div>
-                                            </div>
-                                            <img src="./static/dmca.webp" width="768" height="400"
-                                                alt="Feature 04">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
 
 
                     </div>
@@ -832,7 +816,7 @@
                                 <!-- Logo -->
                                 <a class="cwban" href="https://adgstudios.co.za">
                                     <!-- ezgif-6-ef156ebc88.webm-->
-                                    <img src="./static/favicon-32x32.png" width="32" height="32" alt="Stellar">
+                                    <img src="./static/favicon-32x32.png" width="32" height="32" alt="Animeflix">
                                 </a>
                             </div>
                             <div class="cit3o cvdvu">Animeflix</div>
@@ -849,9 +833,6 @@
 
     </div>
 
-    <script src="./static/alpinejs.min.js.download" defer=""></script>
-
-    <script src="./static/main.js.download"></script>
 
 
 
