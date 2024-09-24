@@ -202,6 +202,54 @@
                         </ul>
                     </nav>
 
+                      <!-- Mobile menu -->
+                      <div class="c2sao c89zz cwap3 c4agq" x-data="{ expanded: false }">
+
+                        <!-- Hamburger button -->
+                        <button class="c381v" :class="{ &#39;active&#39;: expanded }" @click.stop="expanded = !expanded"
+                            aria-controls="mobile-nav" :aria-expanded="expanded" aria-expanded="false">
+                            <span class="cmmna">Menu</span>
+                            <svg class="c0z2s cit3o cm1cr cx3jz cgi3a cqxsj csq2q c7vsq" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="2" width="20" height="2" rx="1"></rect>
+                                <rect y="9" width="20" height="2" rx="1"></rect>
+                                <rect y="16" width="20" height="2" rx="1"></rect>
+                            </svg>
+                        </button>
+
+                        <!-- Mobile navigation -->
+                        <nav id="mobile-nav" class="cbvce cml7t cpjek cgi3a ca5ue chez1 csm51 c1tcw ca0gw ccxsu ccyhi"
+                            x-ref="mobileNav"
+                            :style="expanded ? &#39;max-height: &#39; + $refs.mobileNav.scrollHeight + &#39;px; opacity: 1&#39; : &#39;max-height: 0; opacity: .8&#39;"
+                            @click.outside="expanded = false" @keydown.escape.window="expanded = false"
+                            style="max-height: 0; opacity: .8">
+                            <ul class="c3d7q cy8oh c8nst coow7 cn544 ccyhi">
+                                <li>
+                                    <a class="c0z2s cit3o ccqx1 coow7 cvdvu c4agq"
+                                        href="https://anime.adgstudios.co.za/library">Anime</a>
+                                </li>
+                                <li>
+                                    <a class="c0z2s cit3o ccqx1 coow7 cvdvu c4agq"
+                                        href="https://manga.adgstudios.co.za">Manga</a>
+                                </li>
+                                <li>
+                                    <a class="c0z2s cit3o ccqx1 coow7 cvdvu c4agq"
+                                        href="https://apps.adgstudios.co.za/">App Store</a>
+                                </li>
+                                <li>
+                                    <a class="c0z2s cit3o ccqx1 coow7 cvdvu c4agq"
+                                        href="https://www.bonfire.com/store/animeflix/">Store</a>
+                                </li>
+                                <li>
+                                    <a class="c0z2s cit3o ccqx1 coow7 cvdvu c4agq"
+                                        href="/articles.html">Articles</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                     
+
                 </div>
             </div>
         </header>
