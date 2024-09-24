@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en" class="cmmz3">
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>AnimeFlix | Top 2024 Anime</title>
+    <meta name="robots" content="index,follow">
+    <meta name="description"
+        content="AnimeFlix brings you the top anime of 2024, from Ore dake Level Up na Ken to Tsue to Tsurugi no Wistoria. Get ready for a year full of exciting anime releases!">
+    <meta property="og:title" content="Top 2024 Anime">
+    <meta property="og:description"
+        content="Discover the best anime of 2024, including fan favorites and highly anticipated new releases.">
+    <meta property="og:image" content="./bestanime.webp">
+    <meta property="og:image:alt" content="AnimeFlix">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
+    <meta property="og:site_name" content="AnimeFlix">
+
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+    <!-- Preload and Defer Stylesheets -->
+    <link rel="preload" href="./static/aos.css" as="style">
+    <link rel="preload" href="./static/swiper-bundle.min.css" as="style">
+    <link rel="preload" href="./static/style.css" as="style">
+
+    <link href="./static/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/swiper-bundle.min.css">
+    <link href="./static/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap">
+
+    <script src="./static/alpinejs.min.js" defer=""></script>
+    <script src="./static/main.js" defer=""></script>
+
+    <style>
+        /* Anime Card Styling */
+        .anime-card {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .anime-cover {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        .anime-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .anime-title {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+            color: #222222;
+        }
+
+        .anime-description {
+            font-size: 16px;
+            color: #555555;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .anime-genres,
+        .anime-score {
+            font-size: 14px;
+            color: #777777;
+            margin-bottom: 10px;
+        }
+
+        .anime-trailer {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            padding-top: 25px;
+            height: 0;
+            margin-bottom: 10px;
+        }
+
+        .anime-trailer iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .anime-fan-reviews {
+            font-size: 14px;
+            color: #555555;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* Watch Now Button Styling */
+        .watch-now {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff4500;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .watch-now:hover {
+            background-color: #ff6347;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 1024px) {
+            .anime-card {
+                flex-direction: row;
+            }
+
+            .anime-cover {
+                margin-right: 20px;
+                margin-bottom: 0;
+                flex-shrink: 0;
+                height: 100%;
+            }
+
+            .anime-details {
+                flex: 1;
+            }
+
+            .anime-trailer {
+                padding-bottom: 56.25%;
+                padding-top: 25px;
+            }
+        }
+
+        /* Article Header */
+        article header {
+            margin-bottom: 30px;
+        }
+
+        article header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #222222;
+        }
+
+        article header .c2sao {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #555555;
+        }
+
+        /* Best Anime Image */
+        .c5by6 img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 30px auto;
+        }
+    </style>
+</head>
+
+<body class="c4f4x cnihn cs2bp c55gg czrq6">
+
+    <!-- Page wrapper -->
+    <div class="crm2f cbvce cxgh5 cfebz c4agq">
+
+        <!-- Site header -->
+        <header class="ca5ue ca0gw cverl">
+            <div class="co3q6 csm51 csya4 ccyhi">
+                <div class="cm7bi c2sao c4jjw c4agq cm0fl">
+
+                    <!-- Site branding -->
+                    <div class="ci0vw">
+                        <a class="cwban" href="/" aria-label="Animeflix">
+                            <img class="cbdyn" src="./static/favicon-32x32.png" width="32" height="32" alt="Animeflix">
+                        </a>
+                    </div>
+
+                    <!-- Desktop navigation -->
+                    <nav class="cp37h cjnbw ch9bk">
+                        <ul class="csqqr c2sao cbsu6 c4agq c9wgl">
+                            <li><a class="c0z2s cit3o ccqx1 coow7 cvdvu c4agq" href="https://anime.adgstudios.co.za/library">Anime</a></li>
+                            <li><a class="c0z2s cit3o cx3jz ccqx1 cgi3a cqxsj ch2qt cvdvu ciz32" href="https://manga.adgstudios.co.za">Manga</a></li>
+                            <li><a class="c0z2s cit3o cx3jz ccqx1 cgi3a cqxsj ch2qt cvdvu ciz32" href="https://apps.adgstudios.co.za/">App Store</a></li>
+                            <li><a class="c0z2s cit3o cx3jz ccqx1 cgi3a cqxsj ch2qt cvdvu ciz32" href="https://www.bonfire.com/store/animeflix/">Store</a></li>
+                            <li><a class="c0z2s cit3o cx3jz ccqx1 cgi3a cqxsj ch2qt cvdvu ciz32" href="/articles.html">Articles</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- Page content -->
+        <main class="c9wgl">
+            <section class="c27r3">
+                <div class="c3sb3 c2vxt czyer csqqr c21zy c2sao czqre c3x17 ca5ue cl6qg ch67j c4agq" aria-hidden="true">
+                    <div class="c9ua1 chor7 cw2sl cdfzt cz8e7 ca5ue cwmqr"></div>
+                    <div class="chor7 cpgjj cal1k cdfzt cutr4 ca5ue cbc5q cb4st"></div>
+                </div>
+
+                <div class="ca5ue cwmqr ch67j ci4x8" aria-hidden="true">
+                    <canvas data-particle-animation="" data-particle-quantity="15" width="1245" height="384"
+                        style="width: 1245px; height: 384px;"></canvas>
+                </div>
+
+                <div class="c3sb3 c2vxt c5by6 c3x17 cs26b ca5ue c7upq cnheb ch67j" aria-hidden="true">
+                    <img src="./Stellar HTML Demo - Customer Post_files/page-illustration.svg" class="cbdyn" width="1440"
+                        height="427" alt="Page Illustration">
+                </div>
+
+                <div class="co3q6 csm51 csya4 ccyhi">
+                    <div class="ctnn6 cz17m ckbs2 cp02i">
+                        <div class="c0pfd cp37h">
+                            <div class="c9eon cjnbw cifrc">
+                                <div class="c80wd">
+                                    <article>
+                                        <header>
+                                            <h1 class="cc7gh ccqrz cx8zw c6df8 cfcmr ctwez cwban cvc1j c4zau">Top Anime
+                                                of 2024</h1>
+                                            <div class="c2sao czw8c cvdvu cpvtt c4agq">
+                                                <img class="cdfzt" src="./static/bestanime.webp" width="32" height="32"
+                                                    alt="AnimeFlix">
+                                                <div>
+                                                    <div class="cit3o ccqx1">Ashlin Govindasamy</div>
+                                                    <div class="cgzoy">Anime Expert</div>
+                                                </div>
+                                            </div>
+                                        </header>
+
+                                        <!-- Post content -->
+                                        <div class="ciowr cwrle carms cps3d cu7kd cgag9 cm1rn clr09 c88wf cp1uq c3u6r cs8p6 cpq95 cf430 c2gsm cmuyi cvutj c33tn cbdyn cvvsu">
+                                            <p>
+                                                2024 is shaping up to be a stellar year for anime enthusiasts! With both returning fan
+                                                favorites and fresh adaptations, there’s something for everyone. Here are the top anime
+                                                to look forward to in 2024:
+                                            </p>
+
+                                            <!-- Anime Entries Start Here -->
+
+                                            <!-- 1. Ore dake Level Up na Ken -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx151807-yxY3olrjZH4k.png"
+                                                    alt="Ore dake Level Up na Ken">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">1. Ore dake Level Up na Ken</h2>
+                                                    <p class="anime-description">
+                                                        They say whatever doesn’t kill you makes you stronger, but that’s not the case for
+                                                        the world’s weakest hunter Sung Jinwoo. After being brutally slaughtered by
+                                                        monsters in a high-ranking dungeon, Jinwoo came back with the System, a program
+                                                        only he could see, that’s leveling him up in every way. Now, he’s inspired to
+                                                        discover the secrets behind his powers and the dungeon that spawned them.
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Action, Adventure, Fantasy</p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 83/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/HkIKAnwLZCw" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=Ore+dake+Level+Up+na+Ken"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong> "A refreshing take on the
+                                                        genre!"</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 2. Kimetsu no Yaiba: Hashira Geiko-hen -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx166240-PBV7zukIHW7V.png"
+                                                    alt="Kimetsu no Yaiba: Hashira Geiko-hen">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">2. Kimetsu no Yaiba: Hashira Geiko-hen</h2>
+                                                    <p class="anime-description">
+                                                        Adaptation of the Hashira Training Arc.<br><br>
+                                                        The Hashira, the Demon Slayer Corps' highest ranking swordsmen and members.
+                                                        The Hashira Training has begun in order to face the forthcoming battle against Muzan
+                                                        Kibutsuji. Each with their own thoughts and hopes held in their hearts, a new story
+                                                        for Tanjiro and the Hashira begins.
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Action, Adventure, Drama,
+                                                        Fantasy, Supernatural</p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 81/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/7w5Vfjozzb8" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=Kimetsu+no+Yaiba:+Hashira+Geiko-hen"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong> "An emotional ride with
+                                                        breathtaking visuals!"</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 3. Kaijuu 8-gou -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx153288-tD2OmKy5CJab.jpg"
+                                                    alt="Kaijuu 8-gou">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">3. Kaijuu 8-gou</h2>
+                                                    <p class="anime-description">
+                                                        With the highest kaiju-emergence rates in the world, Japan is no stranger to attack by
+                                                        deadly monsters. Enter the Japan Defense Force, a military organization tasked with the
+                                                        neutralization of kaiju. Kafka Hibino, a kaiju-corpse cleanup man, has always dreamed of
+                                                        joining the force. But when he gets another shot at achieving his childhood dream, he
+                                                        undergoes an unexpected transformation. How can he fight kaiju now that he’s become one
+                                                        himself?!
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Action, Sci-Fi</p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 83/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/7n_mFVPeApw" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=Kaijuu+8-gou"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong> "A must-watch for
+                                                        monster fans!"</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 4. Dungeon Meshi -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx153518-LEK6pAXtI03D.jpg"
+                                                    alt="Dungeon Meshi">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">4. Dungeon Meshi</h2>
+                                                    <p class="anime-description">
+                                                        When young adventurer Laios and his company are attacked and soundly thrashed by a dragon
+                                                        deep in a dungeon, the party loses all its money and provisions...and a member!
+                                                        They're eager to go back and save her, but there is just one problem: If they set out with
+                                                        no food or coin to speak of, they're sure to starve on the way! But Laios comes up with a
+                                                        brilliant idea: "Let's eat the monsters!" Slimes, basilisks, and even dragons...none
+                                                        are safe from the appetites of these dungeon-crawling gourmands!
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Adventure, Comedy, Fantasy</p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 85/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/RtpYObV4c1Y" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=Dungeon+Meshi"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong> "A delightful mix of
+                                                        cooking and adventure!"</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 5. Mushoku Tensei II: Isekai Ittara Honki Dasu Part 2 -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx166873-xO0BRPkmwFll.png"
+                                                    alt="Mushoku Tensei II: Isekai Ittara Honki Dasu Part 2">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">5. Mushoku Tensei II: Isekai Ittara Honki Dasu Part 2</h2>
+                                                    <p class="anime-description">
+                                                        The second cour of <i>Mushoku Tensei II: Isekai Ittara Honki Dasu</i>.<br><br>
+                                                        Following the faceless god Hitogami's advice seems to have worked wonders for Rudeus
+                                                        Greyrat. After enrolling into the University of Magic as he was told, Rudeus reunites
+                                                        with his childhood friend Sylphiette, who put a valiant effort into curing his
+                                                        condition. The two grow ever closer together and decide to host a wedding party,
+                                                        inviting the friends they have made over the years to announce and formalize their
+                                                        relationship.<br><br>
+                                                        For all his recent blessings, however, Rudeus' troubles are far from over. The research
+                                                        he is helping Shizuka Nanahoshi conduct hits a bottleneck, sending her into a deep
+                                                        slump much like he experienced in his previous life. Furthermore, a letter from his
+                                                        father, Paul, brings complications to Rudeus' relationships, and Sylphiette still knows
+                                                        next to nothing about his real background. In the face of these issues, Rudeus will have
+                                                        to apply the lessons he has learned in this new world to navigate through the challenges
+                                                        that come with living a life to its fullest.
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Adventure, Drama, Ecchi, Fantasy</p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 84/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/wwKZYTsxIhk" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=Mushoku+Tensei+II:+Isekai+Ittara+Honki+Dasu+Part+2"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong> "An emotional masterpiece!"
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 6. Kono Subarashii Sekai ni Shukufuku wo! 3 -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx136804-7FVftG67FPBc.jpg"
+                                                    alt="Kono Subarashii Sekai ni Shukufuku wo! 3">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">6. Kono Subarashii Sekai ni Shukufuku wo! 3</h2>
+                                                    <p class="anime-description">
+                                                        The third season of <i>Kono Subarashii Sekai ni Shukufuku wo!</i><br><br>
+                                                        The dysfunctional party is back, but they may be short a member soon ’cause Kazuma is
+                                                        over it. Disillusioned with adventure, he wants to become a monk, but Aqua, Megumin,
+                                                        and Darkness call bull. However, the career dispute gets put on hold when a princess
+                                                        requests to hear all about their tales. Will the taste of fame at the royal castle
+                                                        keep them together or will this mark their farewell tour?
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Action, Adventure, Comedy, Ecchi, Fantasy
+                                                    </p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 83/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/Meo3mO98huE" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=Kono+Subarashii+Sekai+ni+Shukufuku+wo!+3"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong> "Laugh-out-loud moments!"
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 7. Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 3rd Season -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx146066-zzKl6P6OeEjy.jpg"
+                                                    alt="Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 3rd Season">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">7. Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 3rd Season</h2>
+                                                    <p class="anime-description">
+                                                        The third season of <i>Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e</i>.<br><br>
+                                                        The third semester kicks off in high gear with a special boot camp deep in the mountains.
+                                                        Forcibly separated into groups along grade and gender lines, the first, second and
+                                                        third years alike must work together to survive the rugged terrain. Even worse? The
+                                                        leader of the group that comes in last will be expelled. Can Class D make it back to
+                                                        campus intact, or is this where they finally say goodbye to one of their own?
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Drama, Psychological</p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 79/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/Z11Ozjk0ufY" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=Youkoso+Jitsuryoku+Shijou+Shugi+no+Kyoushitsu+e+3rd+Season"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong> "Keeps you on the edge of your
+                                                        seat!"</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 8. MASHLE: Kami Shinkakusha Kouho Senbatsu Shiken-hen -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx166610-S5q7V2v5zdDK.jpg"
+                                                    alt="MASHLE: Kami Shinkakusha Kouho Senbatsu Shiken-hen">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">8. MASHLE: Kami Shinkakusha Kouho Senbatsu Shiken-hen</h2>
+                                                    <p class="anime-description">
+                                                        The second season of <i>MASHLE</i>, adapting the Divine Visionary Candidate Exam
+                                                        Arc.<br><br>
+                                                        After Mash Burnedead's clash with Magia Lupus, the secret about his powers is now out
+                                                        in the open. The short-lived celebration ends when the Bureau of Magic summons Mash
+                                                        before an audience of Divine Visionaries, who collectively decree Mash should reap the
+                                                        consequences and die. However, an evil shadow organization called Innocent Zero
+                                                        hijacks the inquiry to demand that Mash be kept alive.<br><br>
+                                                        Mash proves that he is capable of dealing with Innocent Zero, but the Divine
+                                                        Visionaries' verdict remains unchanged. Luckily, Mash finds unexpected allies in Divine
+                                                        Visionary Rayne Ames and Headmaster Wahlberg Baigan, and they successfully defer his
+                                                        execution until Innocent Zero is defeated. Mash is now allowed to live under one
+                                                        condition: he must be selected as the Divine Visionary candidate by the year's end.
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Action, Comedy, Fantasy</p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 78/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/Al0Zin6iVCE" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=MASHLE:+Kami+Shinkakusha+Kouho+Senbatsu+Shiken-hen"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong> "Hilarious and action-packed!"
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 9. Tensei Shitara Slime Datta Ken 3rd Season -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx156822-Jzo2ITWgm4kM.jpg"
+                                                    alt="Tensei Shitara Slime Datta Ken 3rd Season">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">9. Tensei Shitara Slime Datta Ken 3rd Season</h2>
+                                                    <p class="anime-description">
+                                                        The third season of <i>Tensei Shitara Slime Datta Ken</i>.<br><br>
+                                                        Rimuru has officially become a Demon Lord after defeating Clayman. Following
+                                                        Walpurgis, the Demon Lords' banquet, Rimuru's domain is expanded to include the
+                                                        entire Great Forest of Jura. Anticipating a flood of representatives from all races
+                                                        showing up to pay their respects, Rimuru decides to throw a festival to commemorate
+                                                        the opening of Tempest, using it as an opportunity to gain new citizens and present
+                                                        Demon Lord Rimuru to the world. Meanwhile, in the Holy Empire of Lubelius, home
+                                                        base of the monster-hating cult of Luminism, Holy Knight Captain Hinata receives a
+                                                        message from Rimuru. But the message is actually a fabricated declaration of war
+                                                        sent by some unknown party. Upon learning that Hinata is heading for Tempest, Rimuru
+                                                        makes a decision... Thus begins a new challenge for Rimuru, striving to distinguish
+                                                        friend from foe in his pursuit of the ideal nation where humans and monsters can
+                                                        prosper together.
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Action, Adventure, Comedy, Fantasy</p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 78/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/gqrkjNpoeQM" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=Tensei+Shitara+Slime+Datta+Ken+3rd+Season"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong> "Never disappoints!"
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 10. WIND BREAKER -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx163270-oxwgbe43Cpog.jpg"
+                                                    alt="WIND BREAKER">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">10. WIND BREAKER</h2>
+                                                    <p class="anime-description">
+                                                        Where the average scores are the lowest, but the fights are the strongest.
+                                                        Furin High School is renowned as a super school of delinquents. Haruka Sakura,
+                                                        a first-year student, came from outside the city to fight to the top. However,
+                                                        Furin High School has become a group that protects the town called the “Chime of
+                                                        the Wind Breaker” – Bofurin. The heroic legend of high school delinquent Sakura
+                                                        begins here!
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Action, Comedy, Drama</p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 78/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/62r_G9bEPlU" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=WIND+BREAKER"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong> "A fresh take on sports
+                                                        anime!"</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 11. [Oshi no Ko] 2nd Season -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx166531-dAL5MsqDHUkj.jpg"
+                                                    alt="[Oshi no Ko] 2nd Season">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">11. [Oshi no Ko] 2nd Season</h2>
+                                                    <p class="anime-description">
+                                                        The second season of <i>[Oshi no Ko]</i>.<br><br>
+                                                        Aqua’s desire for revenge takes center stage as he navigates the dark underbelly of the
+                                                        entertainment world alongside his twin sister, Ruby. While Ruby follows in their
+                                                        slain mother’s footsteps to become an idol, Aqua joins a famous theater troupe in
+                                                        hopes of uncovering clues to the identity of his father — the man who arranged their
+                                                        mother’s untimely death, and the man who once starred in the same troupe Aqua hopes
+                                                        to infiltrate.
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Drama, Mystery, Psychological,
+                                                        Supernatural</p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 84/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/QMuajQlx64c" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=Oshi+no+Ko+2nd+Season"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong>
+                                                        "Captivating and thought-provoking!"</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 12. Tokidoki Bosotto Russiago de Dereru Tonari no Alya-san -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx162804-TBeptcAfvqTd.jpg"
+                                                    alt="Tokidoki Bosotto Russiago de Dereru Tonari no Alya-san">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">12. Tokidoki Bosotto Russiago de Dereru Tonari no Alya-san</h2>
+                                                    <p class="anime-description">
+                                                        Alya is a transfer student enjoying popularity at her new high school, often sporting
+                                                        a cold shoulder while earning high marks in class. She ignores her nerdy classmate,
+                                                        Kuze Masachika, except for when she blurts out a flirtatious line to him in Russian.
+                                                        Little does she know, Kuze understands Russian, though he pretends not to. Let’s see where
+                                                        this wacky love story takes them!
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Comedy, Romance, Slice of Life
+                                                    </p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 77/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/pBX6TtOlYow" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=Tokidoki+Bosotto+Russiago+de+Dereru+Tonari+no+Alya-san"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong>
+                                                        "A delightful slice of life!"</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 13. Boku no Hero Academia 7 -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx163139-JchZhUFlNTWU.jpg"
+                                                    alt="Boku no Hero Academia 7">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">13. Boku no Hero Academia 7</h2>
+                                                    <p class="anime-description">
+                                                        The seventh season of <i>Boku no Hero Academia</i>.<br><br>
+                                                        Following an all-out battle with the Paranormal Liberation Front, it is difficult for the
+                                                        people of Japan to continue placing faith in their heroes. To combat the combined power
+                                                        of Tomura Shigaraki and All For One, All Might calls for his ally from the West—the
+                                                        strongest woman on the planet, Star and Stripe.<br><br>
+                                                        However, All For One decides to intercept Star and her fleet to get his hands on her
+                                                        overpowered quirk before she can enter Japanese airspace. Although Endeavor, Hawks,
+                                                        and Best Jeanist are headed to the rendezvous point, Star makes a gamble in the present
+                                                        to save her comrades.
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Action, Adventure</p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 78/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/T5HMoxJRhRY" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=Boku+no+Hero+Academia+7"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong>
+                                                        "The stakes have never been higher!"</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 14. Yubisaki to Renren -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx166794-veSLL0zrrBhp.jpg"
+                                                    alt="Yubisaki to Renren">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">14. Yubisaki to Renren</h2>
+                                                    <p class="anime-description">
+                                                        Yuki Itose is just a typical student dealing with the pressures of college. She is
+                                                        struggling one day on the train when an upperclassman named Itsuomi Nagi helps her
+                                                        out. As he gradually opens a new world to her, Yuki develops feelings for Itsuomi. A
+                                                        pure love story begins to grow.
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Romance, Slice of Life</p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 82/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/hJd9FxYWzL0" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=Yubisaki+to+Renren"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong>
+                                                        "Heartwarming and relatable!"</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 15. Kami no Tou: Tower of God - Ouji no Kikan -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx153406-dU2RLKgMUF2U.jpg"
+                                                    alt="Kami no Tou: Tower of God - Ouji no Kikan">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">15. Kami no Tou: Tower of God - Ouji no Kikan</h2>
+                                                    <p class="anime-description">
+                                                        The second season of <i>Kami no Tou: Tower of God</i>.<br><br>
+                                                        Ja Wangnan can’t seem to pass the 20th Floor. Even after failing time and time
+                                                        again, he refuses to give up. On his journey, he meets a mysterious and powerful
+                                                        character named Viole. Wangnan invites Viole to join his team of Regulars. Their
+                                                        journey continues with new challenges at every turn.
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Action, Adventure, Drama, Fantasy,
+                                                        Mystery</p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 69/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/NlS4Eceev-4" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=Tower+of+God:+Ouji+no+Kikan"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong>
+                                                        "An epic adventure awaits!"</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 16. Tsuki ga Michibiku Isekai Douchuu 2nd Season -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx139518-GZWYKM8Kg1S2.png"
+                                                    alt="Tsuki ga Michibiku Isekai Douchuu 2nd Season">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">16. Tsuki ga Michibiku Isekai Douchuu 2nd Season</h2>
+                                                    <p class="anime-description">
+                                                        The second season of <i>Tsuki ga Michibiku Isekai Douchuu</i>.<br><br>
+                                                        After Makoto Misumi defeats Mitsurugi and Sofia Bulga, humanity is saved from the
+                                                        attacking demon army—for the time being. The goddess is aware of Makoto’s growing
+                                                        power, and she sees him as less of a nuisance and more of a rival. Makoto continues
+                                                        his journey to further expand his community of outcasts and connect with more
+                                                        hyumans. But will he be strong enough to hold off the coming storm?
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Action, Adventure, Comedy, Fantasy
+                                                    </p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 78/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/bJaTrqUGXXU" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=Tsuki+ga+Michibiku+Isekai+Douchuu+2nd+Season"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong>
+                                                        "A captivating world to explore!"</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 17. Shikanoko Nokonoko Koshitantan -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx175977-Pgrtv3p3ROe9.jpg"
+                                                    alt="Shikanoko Nokonoko Koshitantan">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">17. Shikanoko Nokonoko Koshitantan</h2>
+                                                    <p class="anime-description">
+                                                        Koshi Torako has everyone fooled. Her classmates see her as the perfect honor
+                                                        student, unaware of her secret delinquent past. But her new picturesque school life
+                                                        is thrown into chaos when she bumps into Shikanoko Noko, a girl with antlers! Mayhem
+                                                        seems to follow this strange doe-eyed girl. Who, or what, is she?
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Comedy, Fantasy, Slice of Life
+                                                    </p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 70/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/kgM53bfd_L0" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=Shikanoko+Nokonoko+Koshitantan"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong>
+                                                        "Rich in storytelling and lore!"</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 18. Chiyu Mahou no Machigatta Tsukaikata -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx137908-50af3lKVbst2.jpg"
+                                                    alt="Chiyu Mahou no Machigatta Tsukaikata">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">18. Chiyu Mahou no Machigatta Tsukaikata</h2>
+                                                    <p class="anime-description">
+                                                        An ordinary walk home from school turns into an epic journey for Usato. After
+                                                        suddenly being dropped into another world with two fellow students, Usato learns
+                                                        he was summoned there by accident. But things turn around when he discovers a unique
+                                                        aptitude for healing magic! Now, he trains beyond human limitations, using his
+                                                        self-healing abilities to gain absurd strength and unrivaled stamina.
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Action, Fantasy</p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 75/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/UkPRnHQJrws" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=Chiyu+Mahou+no+Machigatta+Tsukaikata"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong>
+                                                        "Laugh-out-loud funny!"</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 19. Ookami to Koushinryou: MERCHANT MEETS THE WISE WOLF -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx145728-YUKXjN2E81Pq.jpg"
+                                                    alt="Ookami to Koushinryou: MERCHANT MEETS THE WISE WOLF">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">19. Ookami to Koushinryou: MERCHANT MEETS THE WISE WOLF</h2>
+                                                    <p class="anime-description">
+                                                        Lawrence is a traveling merchant selling various goods from a horse-drawn cart. One
+                                                        day, he arrives at a village and meets a beautiful girl with the ears and tail of an
+                                                        animal! Her name is Holo the Wisewolf and she brings bountiful harvests. She wishes to
+                                                        return to her homeland, and Lawrence offers to take her. Now, the once-lonely merchant
+                                                        and the once-lonely wisewolf begin their journey north.
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Adventure, Fantasy, Romance
+                                                    </p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 78/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/Fr50ydw5H_Q" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=Ookami+to+Koushinryou:+MERCHANT+MEETS+THE+WISE+WOLF"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong>
+                                                        "Nostalgic and heartwarming!"</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 20. Tsue to Tsurugi no Wistoria -->
+                                            <div class="anime-card">
+                                                <img class="anime-cover" src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx174576-tpKcHG0eO6CS.jpg"
+                                                    alt="Tsue to Tsurugi no Wistoria">
+                                                <div class="anime-details">
+                                                    <h2 class="anime-title">20. Tsue to Tsurugi no Wistoria</h2>
+                                                    <p class="anime-description">
+                                                        A gripping fantasy adventure that captivates viewers with its beautiful animation
+                                                        and intricate plot. Fans are excited to see how the story develops.
+                                                    </p>
+                                                    <p class="anime-genres"><strong>Genres:</strong> Action, Adventure, Comedy, Drama,
+                                                        Fantasy</p>
+                                                    <p class="anime-score"><strong>Average Score:</strong> 76/100</p>
+                                                    <div class="anime-trailer">
+                                                        <iframe src="https://www.youtube.com/embed/FNiBiXXeyb8" title="YouTube video player"
+                                                            frameborder="0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <a href="https://anime.adgstudios.co.za/search?keyword=Tsue+to+Tsurugi+no+Wistoria"
+                                                        class="watch-now">Watch Now</a>
+                                                    <p class="anime-fan-reviews"><strong>Fan Reviews:</strong>
+                                                        "A visually stunning journey!"</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Anime Entries End Here -->
+
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <!-- Site footer -->
+        <footer>
+            <div class="co3q6 csm51 csya4 ccyhi">
+                <div class="co97x cbinm cb684 c68vp cjyiu">
+                    <div class="cbwex c4g3l c5tjy ciof7">
+                        <div class="cm7bi cacyx c32lj cfebz ck8nf c4agq">
+                            <div class="cx0x3 cuash">
+                                <a class="cwban" href="https://adgstudios.co.za">
+                                    <img src="./static/favicon-32x32.png" width="32" height="32" alt="Animeflix">
+                                </a>
+                            </div>
+                            <div class="cit3o cvdvu">Animeflix</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

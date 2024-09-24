@@ -4434,8 +4434,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .cgag9 :is(:where(strong):not(:where([class~="not-prose"], [class~="not-prose"] *))) {
-    --tw-text-opacity: 1;
-    color: rgb(248 250 252/var(--tw-text-opacity))
+    --tw-text-opacity: 1;    
 }
 
 @supports (overflow:clip) {
